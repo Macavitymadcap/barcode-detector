@@ -1,0 +1,82 @@
+:root {
+  color-scheme: light dark;
+  --text: light-dark(black, white);
+  --background: light-dark(white, black);
+  --outline: light-dark(#333, #ccc);
+  --string: light-dark(green, rgb(0, 200, 0));
+  --number: light-dark(darkorange, rgb(255, 192, 115));
+  --boolean: light-dark(blue, rgb(127, 127, 253));
+  --null: light-dark(magenta, rgb(254, 123, 254));
+  --key: light-dark(red, rgb(251, 128, 128));
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+.centred-flex-column {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.labelled-input {
+  display: grid;
+  margin-block: .5rem;
+}
+
+#image-box {
+  width: 10rem;
+
+  img {
+    height: auto;
+    width: 100%;
+    margin-block: 1rem;
+  }
+}
+
+#output-header {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-block-end: 1rem;
+}
+
+#barcode-output {
+  align-items: baseline;
+}
+
+pre {
+  width: 100%;
+  outline: 1px solid var(--outline); 
+  padding: .5rem; 
+  margin: 0 auto; 
+}
+
+.string { 
+  color: var(--string); 
+}
+
+.number { 
+  color: var(--number); 
+}
+
+.boolean { 
+  color: var(--boolean); 
+}
+
+.null { 
+  color: var(--null); 
+}
+
+.key { 
+  color: var(--key); 
+}
+
+footer {
+  margin: 0 auto;
+  padding: 1rem;
+}

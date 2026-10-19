@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css" >
+  <script src="script.js"></script>
+</head>
+<body class="centred-flex-column">
+  <header>
+    <h1>Barcode Detection API</h1>
+  </header>
+
+  <main>
+    <p>
+      This based is an exploration of the 
+      <a 
+        href="https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API" 
+        target="_blank"
+      >Barcode Detection API
+      </a>, which currently has limited browser support.
+    </p>
+    <p id="api-supported-paragraph"></p>
+    
+    <div class="labelled-input">
+      <label for="image-select">Select Barcode</label>
+      <select id="image-select"></select>
+    </div>
+
+    <div class="labelled-input">
+      <label for="file-input">Upload Image</label>
+      <input type="file" id="file-input" accept="image/*" capture="environment">
+    </div>
+
+    <div id="image-box" class="centred-flex-column">
+      <img id="barcode-image" alt="placeholder">
+      <button id="read-barcode">Read Barcode</button>
+    </div>
+
+    <header id="output-header">
+      <h2>Output</h2>
+      <button id="clear-output-button">Clear</button>
+    </header>
+
+    <output id="barcode-output" class="centred-flex-column"></output>
+
+
+  </main>
+
+  <footer>
+    Written by Dan Kiernan
+  </footer>
+</body>
+</html>
